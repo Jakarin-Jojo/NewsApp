@@ -124,7 +124,7 @@ class BreakingNewsFragment:Fragment(R.layout.fragment_breaking_news) {
         newsAdapter = NewsAdapter()
         binding.rvBreakingNews.apply {
             adapter = newsAdapter
-            layoutManager = LinearLayoutManager(activity)
+            layoutManager = LinearLayoutManager(this@BreakingNewsFragment.context)
             addOnScrollListener(this@BreakingNewsFragment.scrollListener)
         }
     }

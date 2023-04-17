@@ -84,7 +84,7 @@ class SavedNewsFragment:Fragment(R.layout.fragment_saved_news) {
         newsAdapter = NewsAdapter()
         binding.rvSavedNews.apply {
             adapter = newsAdapter
-            layoutManager = LinearLayoutManager(activity)
+            layoutManager = LinearLayoutManager(this@SavedNewsFragment.context)
         }
     }
 }

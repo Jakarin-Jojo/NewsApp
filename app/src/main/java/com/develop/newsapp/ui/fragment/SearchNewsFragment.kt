@@ -145,7 +145,7 @@ class SearchNewsFragment:Fragment(R.layout.fragment_search_news) {
         newsAdapter = NewsAdapter()
         binding.rvSearchNews.apply {
             adapter = newsAdapter
-            layoutManager = LinearLayoutManager(activity)
+            layoutManager = LinearLayoutManager(this@SearchNewsFragment.context)
             addOnScrollListener(this@SearchNewsFragment.scrollListener)
         }
     }
